@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Select',
   props: {
     title: String,
     options: Array
@@ -34,9 +34,9 @@ export default {
       }
       this.isOpen = !this.isOpen
     },
-    chooseOption (gender) {
+    chooseOption (option) {
       this.changeState()
-      this.$emit('value', gender)
+      this.$emit('value', option)
     }
   }
 }
